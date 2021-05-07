@@ -8,7 +8,7 @@ function survivalArea(array $heights)
         } elseif(max($heights) === 0 ){
             echo 'Une montagne est par définition au-dessus du niveau de la mer !';
         } else {
-            if(count($heights) < 100000 && max($heights) < 100000) {
+            if(count($heights) <= 100000 && max($heights) <= 100000) {
                 $safeZones = [];
                 $maxHeight = $heights[0];
 
